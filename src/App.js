@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Connections from "./components/Connections";
+import Users from "./components/Users";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-mukta tracking-wide bg-slate-800 h-[100vh] py-6">
+      <div className="w-[350px] mx-auto  border-4 border-gray-500 bg-sky-100">
+        <Connections />
+        <Users />
+      </div>
     </div>
   );
 }
